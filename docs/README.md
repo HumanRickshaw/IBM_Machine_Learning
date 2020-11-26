@@ -1,5 +1,7 @@
 # [IBM Machine Learning](https://www.coursera.org/professional-certificates/ibm-machine-learning)
 
+## [Exploratory Data Analysis for Machine Learning](https://www.coursera.org/learn/ibm-exploratory-data-analysis-for-machine-learning)
+
 ## [Supervised Learning: Regression](https://www.coursera.org/learn/supervised-learning-regression)
 
 ## [Supervised Learning: Classification](https://www.coursera.org/learn/supervised-learning-classification)
