@@ -1,4 +1,4 @@
-# IBM_Machine_Learning# [IBM Machine Learning](https://www.coursera.org/professional-certificates/ibm-machine-learning)
+# [IBM Machine Learning](https://www.coursera.org/professional-certificates/ibm-machine-learning)
 
 ## [Exploratory Data Analysis for Machine Learning](https://www.coursera.org/learn/ibm-exploratory-data-analysis-for-machine-learning)
 
