@@ -2,6 +2,8 @@
 
 ## [Exploratory Data Analysis for Machine Learning](https://www.coursera.org/learn/ibm-exploratory-data-analysis-for-machine-learning)
 
+[Exploratory Data Analysis with Housing in Ames, IA](https://humanrickshaw.github.io/IBM_Machine_Learning/EDA%20Project.html)
+
 ## [Supervised Learning: Regression](https://www.coursera.org/learn/supervised-learning-regression)
 
 ## [Supervised Learning: Classification](https://www.coursera.org/learn/supervised-learning-classification)
