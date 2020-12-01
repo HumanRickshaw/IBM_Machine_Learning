@@ -6,6 +6,8 @@
 
 ## [Supervised Learning: Regression](https://www.coursera.org/learn/supervised-learning-regression)
 
+[Regression and Regularization with Housing for Ames, IA](https://humanrickshaw.github.io/IBM_Machine_Learning/Regression%20Project.html)
+
 ## [Supervised Learning: Classification](https://www.coursera.org/learn/supervised-learning-classification)
 
 ## [Unsupervised Learning](https://www.coursera.org/learn/ibm-unsupervised-learning)
