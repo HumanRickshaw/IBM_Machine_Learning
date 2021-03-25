@@ -14285,17 +14285,33 @@ a.anchor-link {
 </ul><p>The original study can be found <a href="https://pubmed.ncbi.nlm.nih.gov/2468795/">here</a>.</p>
 <p>Here are some <a href="https://www.cancer.org/cancer/prostate-cancer/about/key-statistics.html">Key Statistics for Prostate Cancer</a> from the American Cancer Society.</p>
 <p>Clustering groups of men together that have similar characteristics, differentiating them from other clusters, may prove to be useful in various treatments in various stages of illnesses related to men's health.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="IV.-Exploratory-Data-Analysis">IV. Exploratory Data Analysis<a class="anchor-link" href="#IV.-Exploratory-Data-Analysis">&#182;</a></h1><p>There were no missing values and several variables had already been log transformed.</p>
-<h2 id="1.-Distributions-and-Histograms">1. Distributions and Histograms<a class="anchor-link" href="#1.-Distributions-and-Histograms">&#182;</a></h2><p><img src = "Unsupervised1 - Histograms.png"></p>
+<h2 id="1.-Distributions-and-Histograms">1. Distributions and Histograms<a class="anchor-link" href="#1.-Distributions-and-Histograms">&#182;</a></h2><p><br/>
+<a href = "Unsupervised1 - Histograms.png">
+    <img src = "Unsupervised1 - Histograms.png" width = 600>
+</a></p>
 <p><code>Age</code> is left skewed.</p>
 <p><code>logCV</code>, <code>logPSA</code>, and <code>logPW</code> have been appropriately log transformed and are close to normal distribution.</p>
 <p><code>logBPH</code>, <code>logCP</code>, and <code>Gleason2</code> all have over 40% of their observations in the least value bin.</p>
 <p><code>Gleason1</code> and <code>SVI</code> are both categorical and are unbalanced.</p>
-<h2 id="2.-Correlations">2. Correlations<a class="anchor-link" href="#2.-Correlations">&#182;</a></h2><p><img src = "Unsupervised2 - Correlations.png"></p>
+<h2 id="2.-Correlations">2. Correlations<a class="anchor-link" href="#2.-Correlations">&#182;</a></h2><p><br/>
+<a href = "Unsupervised2 - Correlations.png">
+    <img src = "Unsupervised2 - Correlations.png" width = 600>
+</a></p>
 <p><code>Gleason1</code> and <code>Gleason2</code> have the highest correlation at around 0.75.</p>
 <p><code>logCV</code> and <code>logPSA</code>, <code>logCP</code> and <code>logCV</code>, and <code>logCP</code> and <code>SVI</code> also have high correlations.</p>
 <p>No variables will be removed, as multicollinearity is not an issue.</p>
-<h1 id="IV.--Clustering-Models">IV.  Clustering Models<a class="anchor-link" href="#IV.--Clustering-Models">&#182;</a></h1><p>The data will be split into training (70%) and validation (30%) sets.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="V.--Clustering-Models">V.  Clustering Models<a class="anchor-link" href="#V.--Clustering-Models">&#182;</a></h1><p>The data will be split into training (70%) and validation (30%) sets.</p>
 <p>I am using three usupervised learning algorithms:</p>
 <ul>
     <li>K-Means Clustering - comparing 1 to 10 clusters.  An elbow plot will be used to determine the optimal cluster size.</li>
@@ -14304,33 +14320,50 @@ a.anchor-link {
 </ul><p>For each of the three models, the cluster results of the train set will be represented as the color in a grid of pair-plots for all nine variables.</p>
 <h2 id="1.-KMeans-Clustering">1. KMeans Clustering<a class="anchor-link" href="#1.-KMeans-Clustering">&#182;</a></h2><p>The distortion and inertia imply <em>n = 3</em> clusters is an appropriate value.</p>
 <p><br/>
-<img src = "Unsupervised3 - Elbow.png">
+<a href = "Unsupervised3 - Elbow.png">
+    <img src = "Unsupervised3 - Elbow.png" width = 750>
+</a>
 <br/></p>
 <p>Pair-plots are shown below.</p>
 <p><br/>
-<img src = "Unsupervised4 - KMeans.png">
+<a href = "Unsupervised4 - KMeans.png">
+    <img src = "Unsupervised4 - Kmeans.png" width = 500>
+</a>
 <br/></p>
 <p>Cluster 2 has noticeable, tight peaks for <code>logBPH</code>, <code>logPW</code>, <code>Gleason2</code>, <code>Gleason1</code>, and <code>SVI</code>.  Most of the variables have much overlap among the clusters.</p>
 <h2 id="2.-Hierarchical-Agglomerative-Clustering">2. Hierarchical Agglomerative Clustering<a class="anchor-link" href="#2.-Hierarchical-Agglomerative-Clustering">&#182;</a></h2><p>Below is a graphic of how the observations in the training set clustered together.</p>
 <p><br/>
-<img src = "Unsupervised5 - Dendrogram.png">
+<a href = "Unsupervised5 - Dendrogram.png">
+    <img src = "Unsupervised5 - Dendrogram.png" width = 750>
+</a>
 <br/></p>
 <p>The colors of the above dendogram match with the clusters in the pair-plots shown below.</p>
 <p><br/>
-<img src = "Unsupervised6 - HAC.png">
+<a href = "Unsupervised6 - HAC.png">
+    <img src = "Unsupervised6 - HAC.png" width = 500>
+</a>
 <br/></p>
 <p>Again, most of the variables have much overlap among the clusters.</p>
 <h2 id="3.-MeanShift-Clustering">3. MeanShift Clustering<a class="anchor-link" href="#3.-MeanShift-Clustering">&#182;</a></h2><p>Pair-plots are shown below</p>
 <p><br/>
-<img src = "Unsupervised7 - MeanShift.png">
+<a href = "Unsupervised7 - MeanShift.png">
+    <img src = "Unsupervised7 - MeanShift.png" width = 500>
+</a>
 <br/></p>
 <p>MeanShift resulted in only two clusters. Again, most of the variables have much overlap among the clusters.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="VI.-Key-Findings">VI. Key Findings<a class="anchor-link" href="#VI.-Key-Findings">&#182;</a></h1><p>For all three models, the clusters seem to be most noticeably correlated with <code>Gleason2</code>.  This is clear not only from the scatter plots of variable pairs, but the distinct separations in the distribution plot of <code>Gleason2</code> along the diagonal.</p>
 <p>Although there were a few peaks for the other variables, the overall distributions were generally highly overlapping.  The scatter plots also had no emerging patterns.</p>
 <h1 id="VII.-Final-Model-Selection">VII. Final Model Selection<a class="anchor-link" href="#VII.-Final-Model-Selection">&#182;</a></h1><p>I choose Hierarchical Agglomerative Clustering as my final model.  I chose it because I could set the cluster size from the dendogram and because it is recommended for uneven cluster sizes.</p>
 <p>The validation pair-plots are shown below.</p>
 <p><br/>
-<img src = "Unsupervised8 - HAC - Validation.png">
+<a href = "Unsupervised8 - HAC - Validation.png">
+    <img src = "Unsupervised8 - HAC - Validation.png" width = 500>
+</a>
 <br/></p>
 <p>Again, the clusters are noticeably correlated with <code>Gleason2</code>.  Perhaps <code>Gleason2</code> is a good 'average' metric of the rest, which would explain more variance of the other variables among the clusters.</p>
 <h1 id="VIII.-Conclusion,-Next-Steps,-and-Shortcomings">VIII. Conclusion, Next Steps, and Shortcomings<a class="anchor-link" href="#VIII.-Conclusion,-Next-Steps,-and-Shortcomings">&#182;</a></h1><p>The dataset was only 97 observations and 9 variables. Only 67 observations were used in the clustering algorithms.  More observations would have more diversity and perhaps more distinct clusters emerging.</p>
