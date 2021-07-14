@@ -10,7 +10,7 @@
 
 ## [Supervised Learning: Classification](https://www.coursera.org/learn/supervised-learning-classification)
 
-[Classification with Prostate Data (Under Construction)](https://humanrickshaw.github.io/IBM_Machine_Learning/Classification%20Report.html)
+[Classification with Prostate Data](https://humanrickshaw.github.io/IBM_Machine_Learning/Classification%20Report.html)
 
 ## [Unsupervised Learning](https://www.coursera.org/learn/ibm-unsupervised-learning)
 
