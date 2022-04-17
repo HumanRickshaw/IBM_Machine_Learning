@@ -19,3 +19,5 @@
 ## [Deep Learning and Reinforcement Learning](https://www.coursera.org/learn/deep-learning-reinforcement-learning)
 
 ## [Specialized Models: Time Series and Survival Analysis](https://www.coursera.org/learn/time-series-survival-analysis)
+
+[Lab Results](https://humanrickshaw.github.io/IBM_Machine_Learning/Time%20Series%20Report.html)
